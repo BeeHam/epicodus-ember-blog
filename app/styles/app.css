@@ -7,8 +7,20 @@
   color: #c5cdd8;
 }
 
-li {
+li.posts {
   font-family: Copperplate, 'Copperplate Gothic Light', fantasy, sans-serif;
+  background-color: #f8ffeb;
+  margin: 0.5em;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+li.posts:hover {
+  border: solid 2px #c9e58b;
+}
+
+ul {
+  list-style: none;
 }
 
 .content {
