@@ -1,0 +1,25 @@
+{{#if updateBlogpostForm}}
+  <h4>Update {{blogpost.title}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title" placeholder=blogpost.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=blogpost.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Content</label>
+        {{input value=content id="content" placeholder=blogpost.content}}
+      </div>
+
+      <button {{action 'update' blogpost}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <span {{action 'updateBlogpostForm'}}>Update</span>
+{{/if}}
