@@ -2,5 +2,11 @@
 
 <p>Get It!</p>
 
+<ul>
+  {{#each model as |blogpost|}}
+    {{post-tile blogpost=blogpost}}
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}}
