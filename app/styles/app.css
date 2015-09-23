@@ -1,0 +1,34 @@
+.header {
+  margin-top: 0;
+  padding: 1em;
+  background-color: lightgrey;
+  background: no-repeat center/cover url("http://images.bwwstatic.com/upload10/874337/tn-500_markstrongbyuliweber.jpg");
+  text-align: center;
+  color: #c5cdd8;
+}
+
+li {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy, sans-serif;
+}
+
+.content {
+  margin-top: 2em;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}

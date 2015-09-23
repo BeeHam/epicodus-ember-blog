@@ -1,15 +1,16 @@
-<h3>Welcome to</h3>
-<h1>Our Sweet Movie Blog About British Male Actors!</h1>
+<div class="header">
+  <h3>Welcome to</h3>
+  <h1>Our Sweet Movie Blog About British Male Actors!</h1>
+</div>
+<div class="content">
+  <ul>
+    {{#each model as |blogpost|}}
+      {{post-tile blogpost=blogpost update="update" destroyBlogpost="destroyBlogpost"}}
+    {{/each}}
+  </ul>
 
-<p>Get It!</p>
-
-<ul>
-  {{#each model as |blogpost|}}
-    {{post-tile blogpost=blogpost update="update" destroyBlogpost="destroyBlogpost"}}
-  {{/each}}
-</ul>
-
-{{new-blogpost save="save"}}
+  {{new-blogpost save="save"}}
+</div>
 
 <!-- {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}} -->
