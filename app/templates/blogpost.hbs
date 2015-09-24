@@ -1,3 +1,14 @@
 <!-- <h2>{{model.title}}</h2> -->
 
-{{single-blogpost blogpost=model}}
+{{single-blogpost blogpost=model.blogpost}}
+
+
+<ul>
+  {{#each model.blogpost.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
+
+<hr>
+
+{{new-comment save="save" blogpost=model.blogpost}}
